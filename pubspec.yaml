@@ -1,8 +1,8 @@
 name: easy_validator
 description: Simple Object Schema Validation for Flutter
 version: 0.0.1
-author:
-homepage:
+author: Phu Nguyen <mrphu3074@gmail.com>
+homepage: https://github.com/mrphu3074/flutter_easy_validator.git
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
