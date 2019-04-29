@@ -1,4 +1,3 @@
-import 'package:meta/meta.dart';
 import 'package:easy_validator/base/rule.dart';
 import 'package:easy_validator/messages.dart' show getNumberMessage;
 
