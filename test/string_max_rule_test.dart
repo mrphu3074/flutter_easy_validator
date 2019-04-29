@@ -17,7 +17,7 @@ void main() {
 
     test('with custom error message', () {
       String customErrMsg = "Custom Error Message";
-      StringMaxRule rule = StringMaxRule(6);
+      StringMaxRule rule = StringMaxRule(6, message: customErrMsg);
       expect(rule.message, customErrMsg);
     });
   });

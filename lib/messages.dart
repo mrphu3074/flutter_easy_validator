@@ -41,9 +41,9 @@ Map<String, Map<String, Function>> _messages = {
     'max': (Map params) =>
         '${getPath(params)} must be less than or equal to ${getParam(params, 'max')}',
     'lessThan': (Map params) =>
-        '${getPath(params)} must be less than ${getParam(params, 'less')}',
+        '${getPath(params)} must be less than ${getParam(params, 'lessThan')}',
     'moreThan': (Map params) =>
-        '${getPath(params)} must be greater than ${getParam(params, 'more')}',
+        '${getPath(params)} must be greater than ${getParam(params, 'moreThan')}',
     'notEqual': (Map params) =>
         '${getPath(params)} must be not equal to ${getParam(params, 'notEqual')}',
     'positive': (Map params) => '${getPath(params)} must be a positive number',

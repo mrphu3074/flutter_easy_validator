@@ -17,7 +17,7 @@ void main() {
 
     test('with custom error message', () {
       String customErrMsg = "Custom Error Message";
-      StringLengthRule rule = StringLengthRule(6);
+      StringLengthRule rule = StringLengthRule(6, message: customErrMsg);
       expect(rule.message, customErrMsg);
     });
   });
