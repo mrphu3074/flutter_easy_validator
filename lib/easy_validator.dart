@@ -1,7 +1,37 @@
 library easy_validator;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'schemas/bool_schema.dart';
+import 'schemas/double_schema.dart';
+import 'schemas/int_schema.dart';
+import 'schemas/list_schema.dart';
+import 'schemas/map_schema.dart';
+import 'schemas/string_schema.dart';
+import 'schemas/datetime_schema.dart';
+
+MapSchema map() {
+  return MapSchema();
+}
+
+StringSchema string() {
+  return StringSchema();
+}
+
+IntSchema int() {
+  return IntSchema();
+}
+
+DoubleSchema double() {
+  return DoubleSchema();
+}
+
+BoolSchema bool() {
+  return BoolSchema();
+}
+
+ListSchema list() {
+  return ListSchema();
+}
+
+DateTimeSchema date() {
+  return DateTimeSchema();
 }
