@@ -37,7 +37,8 @@ class ListSchema extends Schema {
 
     if (_elementShape != null) {
       Map errors = {};
-      for (int i = 0; i < value.length; i++) {
+      int listSize = value?.length ?? 0;
+      for (int i = 0; i < listSize; i++) {
         _elementShape.path = "$path.$i";
         var err = _elementShape.validate(value[i]);
         if (err != null) {

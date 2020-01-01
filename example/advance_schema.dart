@@ -25,11 +25,11 @@ void main() {
   });
 
   final productSchema = V.map().shape({
-    'name': V.string()..required(),
+    'name': V.string()..required()..label="Tên sản phẩm",
     'sku': V.string()..required(),
     'featured_image': V.string(),
     'type': V.string()..oneOf(['consumable', 'service']),
-    'category_ids': V.list().of(V.int()),
+    'category_ids': V.list()..of(V.int()),
     'list_price': V.double()
       ..required()
       ..label = "Price",
@@ -37,4 +37,11 @@ void main() {
     'cost': V.double()..label = "Cost",
     'description': V.string()
   });
+
+  print(productSchema.validate({
+    'name': '',
+    'category_ids': [
+      1,"abc",3
+    ]
+  }));
 }
